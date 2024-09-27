@@ -4,27 +4,28 @@
     {
         static void Main(string[] args)
         {
-            float r;
-            float a;
+            short x11 = 4;
+            short y11 = 2;
 
-            float h;
+            short x12 = 3;
+            short y12 = 4;
 
-            float A;
-            float S;
+            short x21 = 3;
+            short y21 = 1;
 
-            Console.Write("Enter radius circle: ");
-            r = Convert.ToSingle(Console.ReadLine());
+            short x22 = 5;
+            short y22 = 3;
 
-            Console.Write("Enter the length of the side of the triangle: ");
-            a = Convert.ToSingle(Console.ReadLine());
+            short minX = Math.Min(x11, x21);
+            short minY = Math.Min(y11, y21);
+            short maxX = Math.Max(x12, x22);
+            short maxY = Math.Max(y12, y22);
 
-            Console.Write("Enter the length of the triangle height: ");
-            h = Convert.ToSingle(Console.ReadLine());
+            Console.WriteLine($"Coordinates of the lower left corner: {minX}, {minY}");
 
             Console.WriteLine();
 
-            Foo(r, a, h, out A, out S);
-
+            Console.WriteLine($"Coordinates of the upper right corner: {maxX}, {maxY}");
         }
     }
 }
