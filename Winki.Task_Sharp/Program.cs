@@ -2,21 +2,6 @@
 {
     public class Program
     {
-        static void Foo(float a, float b, float c, out float resultC, out float resultT)
-        {
-            resultC = (float)(3.14 * (a * a));
-            resultT = a * c / 2;
-
-            if (resultC > resultT)
-            {
-                Console.WriteLine("The triangle fit in a circle!");
-            }
-            else
-            {
-                Console.WriteLine("The circle fit in the triangle!");
-            }
-        }
-
         static void Main(string[] args)
         {
             float r;
