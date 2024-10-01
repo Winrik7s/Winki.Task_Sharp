@@ -4,22 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Bishop move a: ");
+            Console.WriteLine("King on the field 5,1");
+
+            Console.Write("King's move a: ");
             byte a = Convert.ToByte(Console.ReadLine());
 
-            Console.Write("Bishop move b: ");
+            Console.Write("King's move b: ");
             byte b = Convert.ToByte(Console.ReadLine());
 
-            const byte c = 6;
-            const byte d = 2;
+            //const byte c = 6;
+            //const byte d = 2;
 
-            if((a == 6 && b == 4) && (c == 6 && d == 2))
+            if(a == 4 && b == 2 || a == 5 && b == 2 || a == 6 && b == 2)
             {
-                Console.WriteLine("The bishop threatens the field c,d!");
+                Console.WriteLine("The king has successfully made a move!");
             }
             else
             {
-                Console.WriteLine("The elephant doesn't threaten the fields.");
+                Console.WriteLine("The king cannot make a move to the specified field.");
             }
         }
     }
