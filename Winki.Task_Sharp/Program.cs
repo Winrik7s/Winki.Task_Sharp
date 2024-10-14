@@ -4,16 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter m: ");
-            short m = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Enter b: ");
+            short b = Convert.ToInt16(Console.ReadLine());
 
-            Console.Write("Enter n: ");
-            short n = Convert.ToInt16(Console.ReadLine());
+            Console.Write("Enter a: ");
+            short a = Convert.ToInt16(Console.ReadLine());
 
-            if (m % n == 0) 
+            if (b % a == 0) 
             {
-                short result = (short)(m / n);
-                Console.WriteLine($"Result: {result}");
+                short result = (short)(b / a);
+                Console.WriteLine($"A is a divisor of B: {result}");
             }
             else
             {
