@@ -12,20 +12,20 @@
 
             if (num1 > num2)
             {
-                Console.WriteLine($"");
+                Console.WriteLine("The first number is greater than the second");
             }
             else
             {
-                Console.WriteLine($"");
+                Console.WriteLine("The second number is greater than the first");
             }
 
             if (num1 == num2)
             {
-                Console.WriteLine($"");
+                Console.WriteLine($"Numbers {num1} and {num2} are the same");
             }
             else
             {
-                Console.WriteLine($"");
+                Console.WriteLine($"Numbers {num1} and {num2} are not the same");
             }
 
         }
