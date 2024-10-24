@@ -33,7 +33,14 @@
             Console.Write("Enter number: ");
             short number = Convert.ToInt16(Console.ReadLine());
 
-
+            if(number <= 0 || number >= 100)
+            {
+                Console.WriteLine("Enter a two - digit number!");
+            }
+            else
+            {
+                Foo(ref number, out short result);
+            }
         }
     }
 }
