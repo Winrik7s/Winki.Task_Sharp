@@ -2,6 +2,8 @@
 {
     public class Program
     {
+        //Completed
+
         static void Foo(ref short x, out short result)
         {
             short x1 = (short)((x / 100));
