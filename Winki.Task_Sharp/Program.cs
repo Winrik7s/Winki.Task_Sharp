@@ -22,7 +22,17 @@
 
         static void Main(string[] args)
         {
-            Console.Write("");
+            Console.Write("Enter number n: ");
+            short n = Convert.ToInt16(Console.ReadLine());
+
+            if(n < 100 || n > 999)
+            {
+                Console.WriteLine("Error! Enter a three-digit number.");
+            }
+            else
+            {
+                Foo(ref n, out short result);
+            }
         }
     }
 }
