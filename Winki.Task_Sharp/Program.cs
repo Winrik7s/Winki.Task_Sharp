@@ -7,6 +7,8 @@
             Console.Write("Enter number n: ");
             short n = Convert.ToInt16(Console.ReadLine());
 
+            short a = 5;
+
             if (n < 10)
             {
                 Console.WriteLine("Error! Enter a two-digit number.");
@@ -15,13 +17,13 @@
             {
                 n = (short)((n / 10) + (n % 10));
                 
-                if(n % 3 == 0)
+                if(n % a == 0)
                 {
-                    Console.WriteLine($"The number {n} is a multiple of 3");
+                    Console.WriteLine($"The number {n} is a multiple of {a}");
                 }
                 else
                 {
-                    Console.WriteLine($"The number {n} is not a multiple of 3");
+                    Console.WriteLine($"The number {n} is not a multiple of {a}");
                 }
             }
         }
