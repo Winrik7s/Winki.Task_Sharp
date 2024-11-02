@@ -5,6 +5,8 @@
         static void Main(string[] args)
         {
             Console.Write("Enter a three-digit number: ");
+
+            //Parse method is faster than Convert method
             short number = Int16.Parse(Console.ReadLine());
 
             short num1 = (short)(number / 100);
