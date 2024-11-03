@@ -15,13 +15,13 @@
             {
                 short sum = (short)((number / 100) * (number / 10 % 10) * (number % 10));
 
-                if (sum >= 100)
+                if (sum >= number)
                 {
-                    Console.WriteLine($"The sum of digits of the number {number} is three digit({sum})");
+                    Console.WriteLine($"The product of the digits ({sum}) is greater than the number {number}");
                 }
                 else
                 {
-                    Console.WriteLine($"The sum of digits of the number {number} is not a three digit({sum})");
+                    Console.WriteLine($"The product of the digits ({sum}) is less than the number {number}");
                 }
             }
         }
