@@ -13,15 +13,15 @@
             }
             else
             {
-                short sum = (short)((number / 100) + (number / 10 % 10) + (number % 10));
+                short sum = (short)((number / 100) * (number / 10 % 10) * (number % 10));
 
-                if (sum >= 10)
+                if (sum >= 100)
                 {
-                    Console.WriteLine($"The sum of digits of the number {number} is two digit({sum})");
+                    Console.WriteLine($"The sum of digits of the number {number} is three digit({sum})");
                 }
                 else
                 {
-                    Console.WriteLine($"The sum of digits of the number {number} is not a two digit({sum})");
+                    Console.WriteLine($"The sum of digits of the number {number} is not a three digit({sum})");
                 }
             }
         }
