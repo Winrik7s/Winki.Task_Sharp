@@ -13,15 +13,15 @@
             }
             else
             {
-                short sum = (short)((number / 100) * (number / 10 % 10) * (number % 10));
+                short sum = (short)((number / 100) + (number / 10 % 10) + (number % 10));
 
-                if (sum >= number)
+                if (sum % 5 == 0)
                 {
-                    Console.WriteLine($"The product of the digits ({sum}) is greater than the number {number}");
+                    Console.WriteLine($"The sum of digits of {number} is a multiple 5");
                 }
                 else
                 {
-                    Console.WriteLine($"The product of the digits ({sum}) is less than the number {number}");
+                    Console.WriteLine($"The sum of digits of {number} is not a multiple 5");
                 }
             }
         }
