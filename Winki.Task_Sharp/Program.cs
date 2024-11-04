@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            char[] symbol = { 'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u', 'Y', 'y'};
+            char[] Ensymbol = { 'A', 'a', 'E', 'e', 'I', 'i', 'O', 'o', 'U', 'u', 'Y', 'y'};
+            char[] Rusymbol = { 'А', 'а', 'У', 'у', 'О', 'о', 'И', 'и', 'Э', 'Ы', 'ы', 'Я', 'я', 'Ю', 'ю', 'Е', 'е', 'Ё', 'ё', 'э'};
 
             short count = 0;
 
@@ -13,9 +14,9 @@
 
             for (int i = 0; i < line?.Length; i++)
             {
-                for(int j = 0; j < symbol.Length; j++)
+                for(int j = 0; j < Ensymbol.Length; j++)
                 {
-                    if (symbol[i] == line[j])
+                    if (Ensymbol[i] == line[j])
                     {
                         count++;
                     }
