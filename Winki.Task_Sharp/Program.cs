@@ -5,11 +5,11 @@
         static void Main(string[] args)
         {
             short count = 0;
-            Console.Write("Select the language of the letters(r - Rus, e - Eng): ");
+            Console.Write("Select the language of the letters(r - Ru, e - En): ");
 
             string? ch = Console.ReadLine().ToLower();
 
-            if(ch == "e")
+            if (ch == "e")
             {
                 Console.Write("Enter a string: ");
                 string? line = Console.ReadLine();
@@ -29,7 +29,7 @@
 
                 Console.WriteLine($"The number of vowel letters in the string {line} equals: {count}");
             }
-            else if(ch == "r")
+            else if (ch == "r")
             {
                 Console.Write("Введите строку: ");
                 string? line = Console.ReadLine();
@@ -48,6 +48,10 @@
                 }
 
                 Console.WriteLine($"Кол - во гласных в строке {line} равняется: {count}");
+            }
+            else
+            {
+                Console.WriteLine("Error! Enter (r - Ru, e - En)");
             }
         }
     }
