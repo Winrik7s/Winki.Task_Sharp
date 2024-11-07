@@ -17,5 +17,12 @@
                 }
             }
         }
+
+        public Staff(string name, string position, decimal salary)
+        {
+            Name = name;
+            Position = position;
+            Salary = salary;
+        }
     }
 }
