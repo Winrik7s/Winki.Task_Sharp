@@ -44,15 +44,15 @@ namespace Winki.Task_Sharp
                 break;
 
                 case "-":
-                    result = Add(num1, num2);
+                    result = Sub(num1, num2);
                 break;
 
                 case "*":
-                    result = Add(num1, num2);
+                    result = Mul(num1, num2);
                 break;
 
                 case "/":
-                    result = Add(num1, num2);
+                    result = Div(num1, num2);
                 break;
 
                 default:
