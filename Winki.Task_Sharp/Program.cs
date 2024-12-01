@@ -41,19 +41,23 @@ namespace Winki.Task_Sharp
             {
                 case "+":
                     result = Add(num1, num2);
+                    Console.WriteLine($"{num1} + {num2} = {result}");
                 break;
 
                 case "-":
                     result = Sub(num1, num2);
-                break;
+                    Console.WriteLine($"{num1} - {num2} = {result}");
+                    break;
 
                 case "*":
                     result = Mul(num1, num2);
-                break;
+                    Console.WriteLine($"{num1} * {num2} = {result}");
+                    break;
 
                 case "/":
                     result = Div(num1, num2);
-                break;
+                    Console.WriteLine($"{num1} / {num2} = {result}");
+                    break;
 
                 default:
                     Console.WriteLine("Error! Enter the operation from the presented list.");
