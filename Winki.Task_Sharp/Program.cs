@@ -9,7 +9,7 @@ namespace Winki.Task_Sharp
 
         static void Main(string[] args)
         {
-            
+            MessageBox(IntPtr.Zero, "Hello, GitHub!", "Test Platform Invoke", 0);
         }
     }
 }
