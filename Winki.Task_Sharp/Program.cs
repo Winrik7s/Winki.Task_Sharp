@@ -23,7 +23,17 @@
 
         static void Main(string[] args)
         {
+            Console.Write("Введите число: ");
+            short number = Convert.ToInt16(Console.ReadLine());
 
+            if(number < 10 || number > 99) 
+            {
+                Console.WriteLine("Число должно быть двузначным!");
+            }
+            else
+            {
+                F(number);
+            }
         }
     }
 }
