@@ -7,17 +7,17 @@
             short num1 = (short)(x / 10);
             short num2 = (short)(x % 10);
 
-            if(num1 == 4 || num1 == 7) 
+            if(num1 == 3 || num1 == 6 || num1 == 9) 
             {
                 Console.WriteLine($"В введенное число входит цифра: {num1}");
             }
-            else if (num2 == 4 || num2 == 7) 
+            else if (num2 == 3 || num2 == 6 || num2 == 9) 
             {
                 Console.WriteLine($"В введенное число входит цифра: {num2}");
             }
             else
             {
-                Console.WriteLine("В введенное число не входят цифры: 4, 7");
+                Console.WriteLine("В введенное число не входят цифры: 3, 6, 9");
             }
         }
 
