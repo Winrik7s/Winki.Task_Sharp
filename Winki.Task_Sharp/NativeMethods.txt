@@ -1,2 +1,0 @@
-﻿MessageBox
-MB_OK
