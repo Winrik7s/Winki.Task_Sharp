@@ -12,12 +12,11 @@
 
             int i = number2;
 
-            do
+            while(i >= number1)
             {
                Console.WriteLine(Math.Sqrt(i));
                i--;
             }
-            while (i >= number1);
         }
     }
 }
