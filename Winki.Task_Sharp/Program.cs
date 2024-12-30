@@ -4,24 +4,20 @@
     {
         static void Main(string[] args)
         {
-            Console.Write("Enter number: ");
-            int number = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter number one: ");
+            int number1 = Convert.ToInt32(Console.ReadLine());
 
-            if(number <= 0)
-            {
-                Console.WriteLine("The number must not be less than or equal to 0!");
-            }
-            else
-            {
-                int i = 10;
+            Console.Write("Enter number two: ");
+            int number2 = Convert.ToInt32(Console.ReadLine());
 
-                do
-                {
-                    Console.WriteLine(i);
-                    i++;
-                }
-                while (i <= number);
+            int i = number2;
+
+            do
+            {
+               Console.WriteLine(Math.Sqrt(i));
+               i--;
             }
+            while (i >= number1);
         }
     }
 }
