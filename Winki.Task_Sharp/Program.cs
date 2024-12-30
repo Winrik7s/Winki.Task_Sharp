@@ -15,11 +15,12 @@
             {
                 int i = 10;
 
-                while (i < number)
+                do
                 {
                     Console.WriteLine(i);
                     i++;
                 }
+                while (i <= number);
             }
         }
     }
