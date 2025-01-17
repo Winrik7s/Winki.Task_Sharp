@@ -2,7 +2,7 @@
 {
     public class Program
     {
-        static decimal InterestOnTheDeposit(decimal sum, short deposit, short day)
+        static decimal InterestOnTheDeposit(decimal sum, decimal deposit, short day)
         {
             decimal dep = sum * deposit * day;
             return dep;
@@ -17,15 +17,15 @@
 
             if(sum < 100)
             {
-                Console.WriteLine($"Deposit amount with accrued interest: {InterestOnTheDeposit(sum, 5, day)}");
+                Console.WriteLine($"Deposit amount with accrued interest: {InterestOnTheDeposit(sum, 0.05M, day)}");
             }
             else if(sum >= 100 || sum <= 200)
             {
-                Console.WriteLine($"Deposit amount with accrued interest: {InterestOnTheDeposit(sum, 7, day)}");
+                Console.WriteLine($"Deposit amount with accrued interest: {InterestOnTheDeposit(sum, 0.07M, day)}");
             }
             else if(sum > 200)
             {
-                Console.WriteLine($"Deposit amount with accrued interest: {InterestOnTheDeposit(sum, 10, day)}");
+                Console.WriteLine($"Deposit amount with accrued interest: {InterestOnTheDeposit(sum, 0.1M, day)}");
             }
         }
     }
