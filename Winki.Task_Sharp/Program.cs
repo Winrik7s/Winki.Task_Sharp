@@ -4,21 +4,23 @@
     {
         static void Main(string[] args)
         {
-            int num1, num2;
+            Console.Write("Enter the first number: ");
+            float num1 = Convert.ToSingle(Console.ReadLine());
 
-            while (true)
+            Console.Write("Enter the second number: ");
+            float num2 = Convert.ToSingle(Console.ReadLine());
+
+            if(num1 == num2)
             {
-                num1 = Convert.ToInt32(Console.ReadLine());
-                num2 = Convert.ToInt32(Console.ReadLine());
-
-                if (num1 < 0 || num1 > 10 || num2 < 0 || num2 > 10)
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine($"{num1 * num2}");
-                }
+                Console.WriteLine("The two numbers are equal");
+            }
+            else if(num1 > num2)
+            {
+                Console.WriteLine("The first number is greater than the second");
+            }
+            else if(num1 < num2)
+            {
+                Console.WriteLine("The first number is less than the second");
             }
         }
     }
