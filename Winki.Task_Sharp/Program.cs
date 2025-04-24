@@ -4,9 +4,12 @@
     {
         static decimal Amount(decimal deposit, short month)
         {
-            for(int i = 1; i <= month; i++)
+            int i = month;
+
+            while(i > 0)
             {
                 deposit += deposit * 0.07M;
+                i--;
             }
 
             return deposit;
